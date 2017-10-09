@@ -110,8 +110,7 @@ class SimpleGUI extends JFrame
 			public void actionPerformed(ActionEvent e)
 			{
 				lbl1.setText("Мб");
-				txt2.setText(
-						String.format("%f", (Double.parseDouble(txt1.getText()) / 1024 / 1024)));
+				txt2.setText(Double.toString((Double.parseDouble(txt1.getText()) / 1024 / 1024)));
 			}
 		};
 		mi2.addActionListener(lst2);
@@ -122,7 +121,7 @@ class SimpleGUI extends JFrame
 			public void actionPerformed(ActionEvent e)
 			{
 				lbl1.setText("Гб");
-				txt2.setText(String.format("%f", (Double.parseDouble(txt1.getText()) / 1024 / 1024 / 1024)));
+				txt2.setText(Double.toString((Double.parseDouble(txt1.getText()) / 1024 / 1024 / 1024)));
 			}
 		};
 		mi3.addActionListener(lst3);
@@ -133,7 +132,7 @@ class SimpleGUI extends JFrame
 			public void actionPerformed(ActionEvent e)
 			{
 				lbl1.setText("Тб");
-				txt2.setText(String.format("%f", (Double.parseDouble(txt1.getText()) / 1024 / 1024 / 1024 / 1024)));
+				txt2.setText(Double.toString((Double.parseDouble(txt1.getText()) / 1024 / 1024 / 1024 / 1024)));
 			}
 		};
 		mi4.addActionListener(lst4);
