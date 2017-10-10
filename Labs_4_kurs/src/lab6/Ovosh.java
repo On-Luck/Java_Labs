@@ -31,6 +31,25 @@ public class Ovosh implements IOvosh
 	private int PerSozr;
 	private String Sort;
 
+	Ovosh() // конструктор
+	{
+		this.Kol_vo = 1;
+		this.Plosh = 50 * 30;
+		this.PerSozr = 80;
+		this.Name = "Неопределен";
+		this.Sort = "Неопределен";
+	}
+	
+	Ovosh(String Name, String Sort, double Plosh, int Kol_vo, int PerSozr) // конструктор
+	// с параметрами
+	{
+		this.Name = Name;
+		this.Sort = Sort;
+		this.Plosh = Plosh;
+		this.Kol_vo = Kol_vo;
+		this.PerSozr = PerSozr;
+	}
+
 	@Override
 	public double GetPlosh()
 	{

@@ -16,7 +16,7 @@ class Ogurec extends Ovosh
 		this.Name = "Неопределен";
 		this.Sort = "Неопределен";
 	}
-
+	
 	Ogurec(String Name, String Sort, double Plosh, int Kol_vo, int PerSozr) // конструктор
 																			// с
 																			// параметрами
