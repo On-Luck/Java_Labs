@@ -8,7 +8,6 @@ import java.awt.event.ActionListener;
 import java.text.ParseException;
 import java.util.ArrayList;
 import java.util.regex.PatternSyntaxException;
-
 import javax.swing.DefaultRowSorter;
 import javax.swing.JButton;
 import javax.swing.JComboBox;
@@ -100,6 +99,8 @@ class MainForm implements TableModelListener
 		tmodel = new Ovosh_TableModel(ovoshi);
 		tmodel.addTableModelListener(this);
 		tbl_ovoshi = new JTable(tmodel);
+		tbl_ovoshi.setDefaultRenderer(Double.class, new NumbRenderer());
+		tbl_ovoshi.setDefaultRenderer(Object.class, new StrRenderer(ovoshi));
 		skroll = new JScrollPane(tbl_ovoshi);
 
 		// Сортировщик всегда после скрола!
@@ -200,7 +201,6 @@ class MainForm implements TableModelListener
 		TableModel model = (TableModel) e.getSource();
 		String columnName = model.getColumnName(column);
 		Object data = model.getValueAt(row, column);
-		System.out.println("123");
 	}
 
 }
