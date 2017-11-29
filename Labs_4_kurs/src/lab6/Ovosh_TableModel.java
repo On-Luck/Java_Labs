@@ -3,7 +3,7 @@ package lab6;
 import java.util.ArrayList;
 import javax.swing.table.AbstractTableModel;
 
-//Модель таблицы
+//Модель общей таблицы
 public class Ovosh_TableModel extends AbstractTableModel
 {
 	ArrayList<Ovosh> ovoshi;
