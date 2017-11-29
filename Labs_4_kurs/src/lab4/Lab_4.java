@@ -61,7 +61,7 @@ class L4_GUI
 		Carskii_gui.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
 		pnl_all = new JPanel(new MigLayout("fill", "[][][]"));
-		// Элементы после екоторых переходить на новую строку,
+		// Элементы после которых переходить на новую строку,
 		// количество колонок, количество строк
 		Carskii_gui.add(pnl_all);
 
