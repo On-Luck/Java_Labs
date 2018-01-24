@@ -12,7 +12,7 @@ interface IOvosh
 
 	double GetPlosh(); // площадь каждого растения
 
-	int GetPeriodSozr(); // период созревания в дняхэ
+	int GetPeriodSozr(); // период созревания в днях
 
 	void SetName(String Name);
 
